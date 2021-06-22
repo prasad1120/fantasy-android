@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_padding">8dp</dimen>
+    <dimen name="horizontal_padding">16dp</dimen>
+    <dimen name="primary_textsize">20sp</dimen>
+    <dimen name="secondary_textsize">16sp</dimen>
+    <dimen name="tertiary_textsize">12sp</dimen>
+    <dimen name="logoDimen">50dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+</resources>

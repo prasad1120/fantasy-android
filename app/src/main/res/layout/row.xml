@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:paddingVertical="@dimen/vertical_padding"
+    android:paddingHorizontal="@dimen/horizontal_padding"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:id="@+id/cell_bg"
+        android:paddingHorizontal="@dimen/horizontal_padding"
+        android:paddingTop="@dimen/vertical_padding"
+        android:paddingBottom="@dimen/horizontal_padding"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/matchNumberTv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tertiary_textsize"
+            android:textColor="@color/tertiaryTextColor"
+            android:text="#1">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/tick_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/matchNumberTv"
+            app:layout_constraintBottom_toBottomOf="@id/matchNumberTv"
+            android:layout_marginLeft="8dp"
+            android:layout_width="16dp"
+            android:src="@drawable/tick"
+            android:layout_height="16dp"
+            android:textSize="@dimen/tertiary_textsize"
+            android:visibility="visible"
+            android:textColor="@color/tertiaryTextColor">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/timeTv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tertiary_textsize"
+            android:textColor="@color/tertiaryTextColor"
+            android:text="02/06 22:30">
+        </TextView>
+
+        <TextView
+            android:id="@+id/versusTv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/matchNumberTv"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/secondary_textsize"
+            android:textColor="@color/secondaryTextColor"
+            android:text="vs">
+        </TextView>
+
+        <TextView
+            android:id="@+id/team1"
+            app:layout_constraintTop_toTopOf="@id/versusTv"
+            app:layout_constraintBottom_toBottomOf="@id/versusTv"
+            app:layout_constraintRight_toLeftOf="@id/t1Logo"
+            android:layout_marginRight="@dimen/horizontal_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/primary_textsize"
+            android:textColor="@color/primaryTextColor"
+            android:text="Team1">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/t1Logo"
+            android:src="@drawable/mi"
+            android:layout_width="@dimen/logoDimen"
+            android:layout_height="@dimen/logoDimen"
+            app:layout_constraintTop_toTopOf="@id/versusTv"
+            app:layout_constraintBottom_toBottomOf="@id/versusTv"
+            app:layout_constraintRight_toLeftOf="@id/versusTv"
+            android:layout_marginRight="@dimen/dp_25">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/team2"
+            app:layout_constraintTop_toTopOf="@id/versusTv"
+            app:layout_constraintBottom_toBottomOf="@id/versusTv"
+            app:layout_constraintLeft_toRightOf="@id/t2Logo"
+            android:layout_marginLeft="@dimen/horizontal_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/primary_textsize"
+            android:textColor="@color/primaryTextColor"
+            android:text="Team2">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/t2Logo"
+            android:src="@drawable/rcb"
+            android:layout_width="@dimen/logoDimen"
+            android:layout_height="@dimen/logoDimen"
+            app:layout_constraintTop_toTopOf="@id/versusTv"
+            app:layout_constraintBottom_toBottomOf="@id/versusTv"
+            app:layout_constraintLeft_toRightOf="@id/versusTv"
+            android:layout_marginLeft="@dimen/dp_25">
+
+        </ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
