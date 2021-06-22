@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.example.fantasyscore.Secrets.WEBAPP_URL;
+import static com.example.fantasyscore.Config.WEBAPP_URL;
 
 public class NetworkHandler {
 

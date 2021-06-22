@@ -36,4 +36,4 @@ obj/
 .externalNativeBuild
 
 google-services.json
-**/Secrets.java
+**/Config.java

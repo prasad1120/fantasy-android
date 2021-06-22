@@ -49,7 +49,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import static com.example.fantasyscore.Secrets.SHEET_URL;
+import static com.example.fantasyscore.Config.SHEET_URL;
 
 public class MainActivity extends AppCompatActivity implements OnItemClickListener  {
 
